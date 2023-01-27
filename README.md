@@ -4,9 +4,9 @@
 ## Misskey Bot (magyar)。
 
 ## Docker telepites
-1,`git clone https://github.com/earl44/ai.git`
-2,`cd ai`
-3,`nano config.json` 
+<p>1,`git clone https://github.com/earl44/ai.git`</p>
+<p>2,`cd ai`</p>
+<p>3,`nano config.json`</p>
 ``` json
 {
 	"host": "https:// misskey szerver cime",
@@ -22,8 +22,8 @@
 	"memoryDir": "data"
 }
 ```
-4,`docker-compose build`
-5,`docker-compose up`
+<p>4,`docker-compose build`</p>
+<p>5,`docker-compose up`</p>
 
 ## Teszt Bot
 https://829.hu/@Adriana
