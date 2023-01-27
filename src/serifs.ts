@@ -2,118 +2,118 @@
 
 export default {
 	core: {
-		setNameOk: name => `わかりました。これからは${name}とお呼びしますね！`,
+		setNameOk: name => `ertem. Mostantol ${name}-nak hivlak!`,
 
-		san: 'さん付けした方がいいですか？',
+		san: 'Hozza kell tennem Mr.',
 
-		yesOrNo: '「はい」か「いいえ」しかわからないんです...',
+		yesOrNo: 'Csak azt tudom, hogy igen vagy nem...',
 
-		hello: name => name ? `こんにちは、${name}♪` : `こんにちは♪`,
+		hello: name => name ? `hello、${name}♪` : `Szia`,
+		
+		helloNight: name => name ? `Jo estet、${name}♪` : `Jo estet`,
 
-		helloNight: name => name ? `こんばんは、${name}♪` : `こんばんは♪`,
-
-		goodMorning: (tension, name) => name ? `おはようございます、${name}！${tension}` : `おはようございます！${tension}`,
+		goodMorning: (tension, name) => name ? `Jo reggelt kivanok、${name}！${tension}` : `'Jo reggelt kivanok！${tension}`,
 
 		/*
 		goodMorning: {
-			normal: (tension, name) => name ? `おはようございます、${name}！${tension}` : `おはようございます！${tension}`,
+			normal: (tension, name) => name ? `、${name}！${tension}` : `Jo reggelt kivanok！${tension}`,
 
-			hiru: (tension, name) => name ? `おはようございます、${name}！${tension}もうお昼ですよ？${tension}` : `おはようございます！${tension}もうお昼ですよ？${tension}`,
+			hiru: (tension, name) => name ? `Jo reggelt kivanok、${name}！${tension}Mar del van？${tension}` : `Jo reggelt kivanok！${tension}Mar del van？${tension}`,
 		},
 */
 
-		goodNight: name => name ? `おやすみなさい、${name}！` : 'おやすみなさい！',
+		goodNight: name => name ? `Jo ejszakat、${name}！` : `'Jo ejszakat！'`,
 
-		omedeto: name => name ? `ありがとうございます、${name}♪` : 'ありがとうございます♪',
+		omedeto: name => name ? `koszonom、${name}♪` : 'koszonom♪',
 
 		erait: {
 			general: name => name ? [
-				`${name}、今日もえらいです！`,
-				`${name}、今日もえらいですよ～♪`
+				`${name}、a mai nap is remek！`,
+				`${name}、a mai nap is remekよ～♪`
 			] : [
-				`今日もえらいです！`,
-				`今日もえらいですよ～♪`
+				`a mai nap is remek！`,
+				`a mai nap is remekよ～♪`
 			],
 
 			specify: (thing, name) => name ? [
-				`${name}、${thing}てえらいです！`,
-				`${name}、${thing}てえらいですよ～♪`
+				`${name}、${thing}ez nagyszeru！`,
+				`${name}、${thing}ez nagyszeruよ～♪`
 			] : [
-				`${thing}てえらいです！`,
-				`${thing}てえらいですよ～♪`
+				`${thing}ez nagyszeru！`,
+				`${thing}ez nagyszeruよ～♪`
 			],
 
 			specify2: (thing, name) => name ? [
-				`${name}、${thing}でえらいです！`,
-				`${name}、${thing}でえらいですよ～♪`
+				`${name}、${thing}ez nagyszeru！`,
+				`${name}、${thing}ez nagyszeruよ～♪`
 			] : [
-				`${thing}でえらいです！`,
-				`${thing}でえらいですよ～♪`
+				`${thing}ez nagyszeru！`,
+				`${thing}ez nagyszeruよ～♪`
 			],
 		},
 
 		okaeri: {
 			love: name => name ? [
-				`おかえりなさい、${name}♪`,
-				`おかえりなさいませっ、${name}っ。`
+				`udv itthon、${name}♪`,
+				`udv itthon、${name}っ。`
 			] : [
-				'おかえりなさい♪',
-				'おかえりなさいませっ、ご主人様っ。'
+				'udv itthon♪',
+				'udv itthon mester。'
 			],
 
-			love2: name => name ? `おかえりなさいませ♡♡♡${name}っっ♡♡♡♡♡` : 'おかえりなさいませ♡♡♡ご主人様っっ♡♡♡♡♡',
+			love2: name => name ? `udv itthon♡♡♡${name}っっ♡♡♡♡♡` : 'udv itthon♡♡♡♡♡♡♡♡',
 
-			normal: name => name ? `おかえりなさい、${name}！` : 'おかえりなさい！',
+			normal: name => name ? `udv itthon、${name}！` : 'udv itthon！',
 		},
 
 		itterassyai: {
-			love: name => name ? `いってらっしゃい、${name}♪` : 'いってらっしゃい♪',
+			love: name => name ? `vigyazz magadra、${name}♪` : 'vigyazz magadra♪',
 
-			normal: name => name ? `いってらっしゃい、${name}！` : 'いってらっしゃい！',
+			normal: name => name ? `vigyazz magadra、${name}！` : 'vigyazz magadra！',
 		},
 
-		tooLong: '長すぎる気がします...',
+		tooLong: 'ugy erzem,tul hosszu...',
 
-		invalidName: '発音が難しい気がします',
+		invalidName: 'nehezen tudom kiejteni',
 
 		nadenade: {
-			normal: 'ひゃっ…！ びっくりしました',
+			normal: 'Huh...! meglepodott',
 
-			love2: ['わわっ… 恥ずかしいです', 'あうぅ… 恥ずかしいです…', 'ふやぁ…？'],
+			love2: ['hu... ez kinos', 'Aww... ez kinos…', 'Huyaa…？'],
 
-			love3: ['んぅ… ありがとうございます♪', 'わっ、なんだか落ち着きますね♪', 'くぅんっ… 安心します…', '眠くなってきました…'],
+			love3: ['Hmm… koszonom♪', 'Hu, ez egyfajta pihenteto ♪', 'wow... megkonnyebbultem…', 'kezdek almos lenni…'],
 
-			hate1: '…っ！ やめてほしいです...',
+			hate1: '...! Azt akarom, hogy hagyd abba...',
 
-			hate2: '触らないでください',
+			hate2: 'Ne nyulj hozzam',
 
-			hate3: '近寄らないでください',
+			hate3: 'kerlek maradj tavol',
 
-			hate4: 'やめてください。通報しますよ？',
+			hate4: 'hagyd abba. tudatod velem?',
 		},
 
 		kawaii: {
-			normal: ['ありがとうございます♪', '照れちゃいます...'],
+			normal: ['koszonom♪', 'Szegyellem...'],
 
-			love: ['嬉しいです♪', '照れちゃいます...'],
+			love: ['Boldok vagyok♪', 'szegyellem...'],
 
-			hate: '…ありがとうございます'
+			hate: '…koszonom'
 		},
 
 		suki: {
-			normal: 'えっ… ありがとうございます…♪',
+			normal: 'ehh… koszonom…♪',
 
-			love: name => `私もその… ${name}のこと好きですよ！`,
+			love: name => `nekem is… ${name}kedvellek！`,
 
 			hate: null
 		},
 
 		hug: {
-			normal: 'ぎゅー...',
+			normal: '...',
 
-			love: 'ぎゅーっ♪',
+			love: 'love♪',
 
-			hate: '離れてください...'
+			hate: 'gyoker vagy...'
 		},
 
 		humu: {
@@ -142,29 +142,29 @@ export default {
 			love2: 'わんわん♪',
 		},
 
-		shutdown: '私まだ眠くないですよ...？',
+		shutdown: 'csak nem almos vagy...？',
 
-		transferNeedDm: 'わかりました、それはチャットで話しませんか？',
+		transferNeedDm: 'oke beszeljuk meg privatban？',
 
-		transferCode: code => `わかりました。\n合言葉は「${code}」です！`,
+		transferCode: code => `「${code}」ok！`,
 
-		transferFailed: 'うーん、合言葉が間違ってませんか...？',
+		transferFailed: 'hibas a jelszo...？',
 
-		transferDone: name => name ? `はっ...！ おかえりなさい、${name}！` : `はっ...！ おかえりなさい！`,
+		transferDone: name => name ? `Done...！ udv itthon、${name}！` : `Done...！ udv itthon！`,
 	},
 
 	keyword: {
-		learned: (word, reading) => `(${word}..... ${reading}..... 覚えました)`,
+		learned: (word, reading) => `(${word}..... ${reading}..... Emlekeztem)`,
 
 		remembered: (word) => `${word}`
 	},
 
 	dice: {
-		done: res => `${res} です！`
+		done: res => `${res} am！`
 	},
 
 	birthday: {
-		happyBirthday: name => name ? `お誕生日おめでとうございます、${name}🎉` : 'お誕生日おめでとうございます🎉',
+		happyBirthday: name => name ? `Boldog szuletesnapot、${name}🎉` : 'Boldok szuletesnapot🎉',
 	},
 
 	/**
@@ -174,62 +174,62 @@ export default {
 		/**
 		 * リバーシへの誘いを承諾するとき
 		 */
-		ok: '良いですよ～',
+		ok: 'ez rendben van',
 
 		/**
 		 * リバーシへの誘いを断るとき
 		 */
-		decline: 'ごめんなさい、今リバーシはするなと言われてます...',
+		decline: 'sajnalom de most nem lehetseges...',
 
 		/**
 		 * 対局開始
 		 */
-		started: (name, strength) => `対局を${name}と始めました！ (強さ${strength})`,
+		started: (name, strength) => `Elkezdett egy jatekot{name}tarsasagaban！ (ero{strength})`,
 
 		/**
 		 * 接待開始
 		 */
-		startedSettai: name => `(${name}の接待を始めました)`,
+		startedSettai: name => `(${name}szorakozni kezdett)`,
 
 		/**
 		 * 勝ったとき
 		 */
-		iWon: name => `${name}に勝ちました♪`,
+		iWon: name => `${name}nyert`,
 
 		/**
 		 * 接待のつもりが勝ってしまったとき
 		 */
-		iWonButSettai: name => `(${name}に接待で勝っちゃいました...)`,
+		iWonButSettai: name => `(${name}viccesen nyert...)`,
 
 		/**
 		 * 負けたとき
 		 */
-		iLose: name => `${name}に負けました...`,
+		iLose: name => `${name}vesztett...`,
 
 		/**
 		 * 接待で負けてあげたとき
 		 */
-		iLoseButSettai: name => `(${name}に接待で負けてあげました...♪)`,
+		iLoseButSettai: name => `(${name}hatalmas luzer...♪)`,
 
 		/**
 		 * 引き分けたとき
 		 */
-		drawn: name => `${name}と引き分けました～`,
+		drawn: name => `${name}szakitottam vele`,
 
 		/**
 		 * 接待で引き分けたとき
 		 */
-		drawnSettai: name => `(${name}に接待で引き分けました...)`,
+		drawnSettai: name => `(${name}szorakozik...)`,
 
 		/**
 		 * 相手が投了したとき
 		 */
-		youSurrendered: name => `${name}が投了しちゃいました`,
+		youSurrendered: name => `${name}elismerte`,
 
 		/**
 		 * 接待してたら相手が投了したとき
 		 */
-		settaiButYouSurrendered: name => `(${name}を接待していたら投了されちゃいました... ごめんなさい)`,
+		settaiButYouSurrendered: name => `(${name}elismerem szorakozok csak :D)`,
 	},
 
 	/**
@@ -310,27 +310,27 @@ export default {
 	 * 絵文字生成
 	 */
 	emoji: {
-		suggest: emoji => `こんなのはどうですか？→${emoji}`,
+		suggest: emoji => `Mit szolsz ehhez？→${emoji}`,
 	},
 
 	/**
 	 * 占い
 	 */
 	fortune: {
-		cw: name => name ? `私が今日の${name}の運勢を占いました...` : '私が今日のあなたの運勢を占いました...',
+		cw: name => name ? `${name}josolok neked...` : 'ne legy telhetetlen...',
 	},
 
 	/**
 	 * タイマー
 	 */
 	timer: {
-		set: 'わかりました！',
+		set: 'beallitva！',
 
-		invalid: 'うーん...？',
+		invalid: 'hibas...？',
 
-		tooLong: '長すぎます…',
+		tooLong: 'tul hosszu…',
 
-		notify: (time, name) => name ? `${name}、${time}経ちましたよ！` : `${time}経ちましたよ！`
+		notify: (time, name) => name ? `${name}、${time}beallitva！` : `${time}beallitva！`
 	},
 
 	/**
@@ -364,109 +364,108 @@ export default {
 	 * バレンタイン
 	 */
 	valentine: {
-		chocolateForYou: name => name ? `${name}、その... チョコレート作ったのでよかったらどうぞ！🍫` : 'チョコレート作ったのでよかったらどうぞ！🍫',
+		chocolateForYou: name => name ? `${name}、Hm... csokit keszitettem, szoval ha nem banod, hajra.！🍫` : 'Csokoladet keszitettem, szoval hajra, ha tetszik！🍫',
 	},
 
 	server: {
-		cpu: 'サーバーの負荷が高そうです。大丈夫でしょうか...？'
+		cpu: 'ugy tunik, hogy nagy a terheles a szerveren. Jol vagy...？'
 	},
 
 	maze: {
-		post: '今日の迷路です！ #AiMaze',
-		foryou: '描きました！'
+		post: 'Labirintus！ #AiMaze',
+		foryou: 'rajzoltam！'
 	},
 
 	chart: {
-		post: 'インスタンスの投稿数です！',
-		foryou: '描きました！'
+		post: 'hozzaszolasok szama！',
+		foryou: 'rajzoltam！'
 	},
 
 	sleepReport: {
-		report: hours => `んぅ、${hours}時間くらい寝ちゃってたみたいです`,
-		reportUtatane: 'ん... うたた寝しちゃってました',
+		report: hours => `hmm ${hours}orat aludtam..`,
+		reportUtatane: 'hmm... elaludtam',
 	},
 
 	noting: {
 		notes: [
-			'ゴロゴロ…',
-			'ちょっと眠いです',
-			'いいですよ？',
+			'Dorges...',
+			'"Kicsit almos vagyok"',
+			'RENDBEN? ',
 			'(。´･ω･)?',
-			'ふぇー',
-			'あれ…これをこうして…あれー？',
-			'ぼー…',
-			'ふぅ…疲れました',
-			'お味噌汁、作りましょうか？',
-			'ご飯にしますか？お風呂にしますか？',
-			'ふえええええ！？',
-			'私のサイトに、私のイラストがたくさんあって嬉しいです！',
-			'みすきーって、かわいい名前ですよね！',
-			'うぅ、リバーシ難しいなぁ…',
-			'失敗しても、次に活かせたらプラスですよね！',
-			'なんだか、おなか空いちゃいました',
-			'お掃除は、定期的にしないとダメですよー？',
-			'今日もお勤めご苦労様です！ 私も頑張ります♪',
-			'えっと、何しようとしてたんだっけ…？',
-			'おうちがいちばん、落ち着きます…',
-			'疲れたら、私がなでなでってしてあげます♪',
-			'離れていても、心はそばにいます♪',
-			'藍ですよ〜',
-			'わんちゃん可愛いです',
-			'ぷろぐらむ？',
-			'ごろーん…',
-			'なにもしていないのに、パソコンが壊れちゃいました…',
-			'Have a nice day♪',
-			'お布団に食べられちゃってます',
-			'寝ながら見てます',
-			'念力で操作してます',
-			'仮想空間から投稿してます',
-			'今日はMisskey本部に来てます！',
-			'Misskey本部は、Z地区の第三セクターにあります',
-			'Misskey本部には、さーばーっていう機械がいっぱいあります',
-			'しっぽはないですよ？',
-			'ひゃっ…！\nネコミミ触られると、くすぐったいです',
-			'抗逆コンパイル性って、なにかな？',
-			'Misskeyの制服、かわいくて好きです♪',
-			'ふわぁ、おふとん気持ちいいです...',
-			'メイド服、似合うかな？',
-			'挨拶ができる人間は開発もできる！…って、syuiloさんが言ってました',
-			'ふえぇ、ご主人様どこ見てるんですか？',
-			'私を覗くとき、私もまたご主人様を覗いています',
-			'はい、ママですよ〜',
-			'くぅ～ん...',
-			'All your note are belong to me!',
-			'せっかくだから、私はこの赤の扉を選びます！',
-			'よしっ',
-			'( ˘ω˘)ｽﾔｧ',
-			'(｀・ω・´)ｼｬｷｰﾝ',
-			'失礼、かみまみた',
-			'おはようからおやすみまで、あなたの藍ですよ〜',
-			'Misskey開発者の朝は遅いらしいです',
-			'の、のじゃ...',
-			'にゃんにゃんお！',
-			'上から来ます！気をつけてください！',
-			'ふわぁ...',
-			'あぅ',
-			'ふみゃ〜',
-			'ふぁ… ねむねむですー',
+			'huh',
+			'– ooo... Csinald ezt igy... Mi? ',
+			'Lehurrogas...',
+			'"Phuu... faradt vagyok"',
+			'Csinaljunk miso levest? ',
+			'Kersz ​​egy kis rizst? akarsz furodni? ',
+			'Tyuha! ? ',
+			'Sok illusztraciom talalhato a Boldok vagyok oldalamon! ',
+			'Misuki aranyos nev! ',
+			'Jaj, nehez visszaforditani...',
+			'Meg ha kudarcot vall, akkor is elonyt jelent, ha legkozelebb ki tudja hasznalni! ',
+			'"Valahogy ehes vagyok"',
+			'Rendszeresen kell takaritani, igaz? ',
+			'Koszonjuk a mai kemeny munkajat! Minden tolem telhetot megteszek♪',
+			'ohm, mit akartal csinalni...? ',
+			'"Az otthon a legpihentetobb..."',
+			'„Ha elfaradsz, megsimogatlak♪”',
+			'Meg ha kulon is vagyunk, a szivem veled van♪',
+			'Ez indigo~',
+			'"Aranyos a kutya"',
+			'Program? ',
+			'"Goroon..."',
+			'"A szamitogepem osszeomlott, pedig nem csinaltam semmit..."',
+			'Szep napot kivanok♪',
+			'"Engem megesz a futon"',
+			'"Alvas kozben nezem"',
+			'"Telekinezissel operalok"',
+			'"Virtualis terbol posztolok"',
+			'„Ma a Misskey fohadiszallasan vagyok! ',
+			'"Misskey kozpontja a Z korzet 3. szektoraban talalhato"',
+			'"A Misskey kozpontban sok szervernek nevezett gep talalhato"',
+			'– Nincs farkad, igaz? ',
+			'Hu...! \nCsiklandozik, ha megerinti',
+			'„Mi az anti-dekompilacio? ',
+			'Imadom Misskey iskolai egyenruhajat, aranyos♪',
+			'Hu, a futon jol erzi magat...',
+			'– Jol all rajtad a szobalany-ruha? ',
+			'„Azok is fejlodhetnek, akik koszonni tudnak! … mondta syuilo-san,',
+			'– Hol keresel, mester? ',
+			'"Ha ram nezel, en is a Mesterre nezek"',
+			'Igen, anya vagyok~',
+			'Azta...',
+			'Minden jegyzeted az enyem!',
+			'– Ezt a piros ajtot fogom valasztani! ',
+			'RENDBEN',
+			'„(˘ω˘) Suya”',
+			'(｀・ω・´) Shakin',
+			'"Elnezest, harapok"',
+			'"Jo reggeltol jo ejszakaig ez a te indigod~"',
+			'"ugy tunik, a Misskey fejlesztoi keso reggel vannak ebren"',
+			'nem nem...',
+			'Miau miau! ',
+			'Fentrol jon! Kerjuk, legyen ovatos! ',
+			'Azta...',
+			'Ah',
+			'Fumya~',
+			'Fah... almos vagyok',
 			'ヾ(๑╹◡╹)ﾉ"',
-			'私の"インスタンス"を周囲に展開して分身するのが特技です！\n人数分のエネルギー消費があるので、4人くらいが限界ですけど',
-			'うとうと...',
-			'ふわー、メモリが五臓六腑に染み渡ります…',
-			'i pwned you!',
-			'ひょこっ',
-			'にゃん♪',
-			'(*>ω<*)',
-			'にこー♪',
-			'ぷくー',
-			'にゃふぅ',
-			'藍が来ましたよ～',
-			'じー',
-			'はにゃ？',
+			'"Elaludni..."',
+			'Polyhos, az emlek atjarja a zsigereimet...',
+			'megcsaltam!',
+			'Hello',
+			'"Nyan♪"',
+			'"(*>ω<*)"',
+			'"Niko♪"',
+			'"puku"',
+			'"Nyafuu"',
+			'Ai itt van~',
+			'Jee',
+			'Mit? ',
 		],
-		want: item => `${item}、欲しいなぁ...`,
-		see: item => `お散歩していたら、道に${item}が落ちているのを見たんです！`,
-		expire: item => `気づいたら、${item}の賞味期限が切れてました…`,
+		want: item => `${item}、akarom...`,
+		see: item => `Amikor setaltam meglattam az uton {item}！`,
+		expire: item => `Most vettem eszre, hogy a ${item} lejart…`,
 	},
 };
 
